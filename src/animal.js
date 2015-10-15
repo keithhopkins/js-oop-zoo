@@ -6,11 +6,9 @@ function Animal(name, age, kind){
 }
 
 Animal.prototype.oink = function(){
-  if (this.kind === 'Pig'){
+  if (this.kind === 'Pig')
     return 'oink';
-  } else {
-    return "I'm not a pig";
-  }
+  return "I'm not a pig";
 };
 
 Animal.prototype.growUp = function(){
@@ -20,7 +18,7 @@ Animal.prototype.growUp = function(){
 
 Animal.prototype.feed = function(){
   if(this.awake)
-    return 'NOM NOM NOM';
+    return 'NOM NOM NOM!!!';
   return "Leave me alone, I'm sleeping!";
 };
 

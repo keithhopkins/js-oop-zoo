@@ -1,4 +1,4 @@
-var Animal = require("./animal");
+var Animal = require("./animal.js");
 
 function Zoo(name, location){
   this.name = name;
@@ -39,7 +39,7 @@ Zoo.prototype.addAnimal = function(animal){
 
 Zoo.prototype.removeAnimal = function(animal){
   if(this.status === 'Open!'){
-    this.animals.splice(animal);
+    this.animals.splice(this.animals.indexOf(animal),1);
     return true;
   }
   return false;
