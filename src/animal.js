@@ -18,7 +18,7 @@ Animal.prototype.growUp = function(){
 
 Animal.prototype.feed = function(){
   if(this.awake)
-    return 'NOM NOM NOM!!!';
+    return 'NOM NOM NOM';
   return "Leave me alone, I'm sleeping!";
 };
 
